@@ -147,6 +147,7 @@ customer-churn-intelligence/
 └── requirements.txt           # Dependencies
 
 🚀 How to Run the Project
+
 1️⃣ Install Dependencies
 
 pip install -r requirements.txt
