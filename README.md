@@ -75,8 +75,6 @@ Minimal assumptions about data distribution
 🔄 ML Pipeline (Production-Ready)
 A single Scikit-Learn pipeline is used to ensure consistency and safe deployment.
 
-mathematica
-Copy code
 Raw Data
    ↓
 Feature Engineering
@@ -89,6 +87,7 @@ Churn Probability
 This design prevents data leakage and ensures identical preprocessing during training and inference.
 
 📊 Model Evaluation
+
 The model is evaluated using multiple metrics:
 
 ROC-AUC Score (~0.82) – primary metric
@@ -98,6 +97,7 @@ Precision, Recall, F1-Score
 ROC-AUC is preferred because churn datasets are often imbalanced, and probability ranking is more valuable than raw accuracy.
 
 📈 Churn Risk Segmentation
+
 Predicted churn probabilities are converted into business-friendly risk levels:
 
 Probability Range	Risk Level
@@ -108,6 +108,7 @@ Probability Range	Risk Level
 This enables targeted and cost-effective retention strategies.
 
 🖥️ Streamlit Web Application
+
 The project includes a high-end Streamlit dashboard that:
 
 Accepts real-time customer inputs
@@ -121,17 +122,17 @@ Suggests actionable retention strategies
 This bridges the gap between machine learning output and business decision-making.
 
 🛠️ Technology Stack
-Category	Tools
-Language	Python
-Data Processing	Pandas, NumPy
-Machine Learning	Scikit-Learn
-Model	Random Forest Classifier
-Deployment	Streamlit
-Model Storage	Joblib
+
+Category:Tools
+Language:Python
+Data Processing:Pandas, NumPy
+Machine Learning:Scikit-Learn
+Model:Random Forest Classifier
+Deployment:Streamlit
+Model Storage:Joblib
 
 📁 Project Structure
-bash
-Copy code
+
 customer-churn-intelligence/
 │
 ├── app.py                     # Streamlit application
@@ -139,16 +140,18 @@ customer-churn-intelligence/
 ├── customer_churn_data.csv    # Dataset
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
+
 🚀 How to Run the Project
 1️⃣ Install Dependencies
-bash
-Copy code
+
 pip install -r requirements.txt
+
 2️⃣ Run the Application
-bash
-Copy code
+
 streamlit run app.py
+
 🎓 Academic & Industry Relevance
+
 This project demonstrates:
 
 Strong understanding of churn analytics
