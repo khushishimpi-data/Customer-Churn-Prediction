@@ -1,14 +1,17 @@
-Customer Churn Intelligence System  
-Probability-Based Machine Learning Solution for Customer Retention
+# 📊 Customer Churn Intelligence System  
+### Probability-Based Machine Learning Solution for Customer Retention
 
 ---
-Project Overview
+
+## 📌 Project Overview
 
 Customer churn is a major challenge for subscription-based businesses such as telecom, SaaS, banking, and digital services. Losing existing customers directly impacts revenue and long-term growth.
 
 This project presents an **end-to-end Machine Learning system** that predicts **customer churn probability** and converts predictions into **actionable business insights** through an interactive **Streamlit web application**.
+
 ---
-Objectives
+
+## 🎯 Objectives
 
 - Predict **customer churn probability** rather than a simple Yes/No output  
 - Engineer meaningful features that capture **customer behavior and value**  
@@ -17,7 +20,8 @@ Objectives
 - Demonstrate **industry-grade ML practices** suitable for real-world use  
 
 ---
- Dataset Description
+
+## 📂 Dataset Description
 
 The dataset consists of **historical customer records** from a subscription-based business.
 
@@ -35,21 +39,21 @@ Each row represents **one customer**, and each column captures a specific attrib
 
 ---
 
-  Feature Engineering
+## 🧠 Feature Engineering
 
 To enhance model performance and business relevance, additional features were created:
 
 - **ChargesPerTenure**  
   ```text
   MonthlyCharges / (Tenure + 1)
-Capures the cost burden relative to customer loyalty.
+Captures the cost burden relative to customer loyalty.
 
 HighMonthlyCharge
 Flags customers paying above the median monthly charge, identifying price-sensitive users.
 
 Feature engineering plays a crucial role in improving churn prediction accuracy and interpretability.
 
- Machine Learning Approach
+🤖 Machine Learning Approach
 🔹 Problem Type
 Binary classification with probability-based output
 
@@ -60,7 +64,7 @@ Why Random Forest?
 
 Handles non-linear churn patterns
 
-Robst to noise and outliers
+Robust to noise and outliers
 
 Works well with engineered features
 
@@ -68,7 +72,7 @@ Produces reliable probability estimates
 
 Minimal assumptions about data distribution
 
- ML Pipeline (Production-Ready)
+🔄 ML Pipeline (Production-Ready)
 A single Scikit-Learn pipeline is used to ensure consistency and safe deployment.
 
 mathematica
@@ -84,7 +88,7 @@ Random Forest Classifier
 Churn Probability
 This design prevents data leakage and ensures identical preprocessing during training and inference.
 
- Model Evaluation
+📊 Model Evaluation
 The model is evaluated using multiple metrics:
 
 ROC-AUC Score (~0.82) – primary metric
@@ -93,7 +97,7 @@ Precision, Recall, F1-Score
 
 ROC-AUC is preferred because churn datasets are often imbalanced, and probability ranking is more valuable than raw accuracy.
 
- Churn Risk Segmentation
+📈 Churn Risk Segmentation
 Predicted churn probabilities are converted into business-friendly risk levels:
 
 Probability Range	Risk Level
@@ -103,7 +107,7 @@ Probability Range	Risk Level
 
 This enables targeted and cost-effective retention strategies.
 
- Streamlit Web Application
+🖥️ Streamlit Web Application
 The project includes a high-end Streamlit dashboard that:
 
 Accepts real-time customer inputs
@@ -116,7 +120,7 @@ Suggests actionable retention strategies
 
 This bridges the gap between machine learning output and business decision-making.
 
- Technology Stack
+🛠️ Technology Stack
 Category	Tools
 Language	Python
 Data Processing	Pandas, NumPy
@@ -125,7 +129,7 @@ Model	Random Forest Classifier
 Deployment	Streamlit
 Model Storage	Joblib
 
- Project Structure
+📁 Project Structure
 bash
 Copy code
 customer-churn-intelligence/
@@ -135,8 +139,7 @@ customer-churn-intelligence/
 ├── customer_churn_data.csv    # Dataset
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
-
- How to Run the Project
+🚀 How to Run the Project
 1️⃣ Install Dependencies
 bash
 Copy code
@@ -144,9 +147,8 @@ pip install -r requirements.txt
 2️⃣ Run the Application
 bash
 Copy code
-streamlit run app.py 
-
- Academic & Industry Relevance
+streamlit run app.py
+🎓 Academic & Industry Relevance
 This project demonstrates:
 
 Strong understanding of churn analytics
