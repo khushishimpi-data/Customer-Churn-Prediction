@@ -135,10 +135,15 @@ Model Storage:Joblib
 
 customer-churn-intelligence/
 │
+
 ├── app.py                     # Streamlit application
+
 ├── churn_pipeline.pkl         # Trained ML pipeline
+
 ├── customer_churn_data.csv    # Dataset
+
 ├── README.md                  # Project documentation
+
 └── requirements.txt           # Dependencies
 
 🚀 How to Run the Project
